@@ -125,7 +125,8 @@ public class FrameAnalyzer implements ImageAnalysis.Analyzer {
                         finalConfidence,
                         elapsed,
                         "motion=" + String.format("%.2f", motionScore)
-                                + " | texture=" + textureResult.details
+                                + " | texture=" + textureResult.details,
+                        faceCrop
                 );
 
                 callback.onResult(result);
